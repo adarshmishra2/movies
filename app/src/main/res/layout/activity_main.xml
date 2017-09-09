@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhishekpc.movies.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Which Type of Movie would you prefer?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/black"
+        />
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp">
+        <RadioButton
+            android:id="@+id/comedy"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Comedy"
+            />
+        <RadioButton
+            android:id="@+id/romantic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Romantic"
+            />
+        <RadioButton
+            android:id="@+id/horror"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Horror"
+            />
+        <RadioButton
+            android:id="@+id/action"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Action"
+            />
+        <RadioButton
+            android:id="@+id/thriller"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Thriller"
+            />
+        <RadioButton
+            android:id="@+id/truestory"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="True Story"
+            />
+
+        </RadioGroup>
+    <Button
+        android:id="@+id/select"
+        android:text="Select"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="85dp"
+        android:onClick="onclick"
+        />
+
+</RelativeLayout>
